@@ -19,7 +19,7 @@ void find_range(int q[], int target, int l, int r) {
 		cout << i << " ";
 		i = l, j = r;
 		while(i < j) {
-			int mid = i + j + 1 >> 1;
+			int mid = i + j + 1 >> 1; //这个是防止死循环 
 			if(q[mid] <= target) i = mid;//这个是区间向右边移动了, i = mid表示取右边区间 
 			else j = mid - 1; //这个表示取左边区间，自然是 j = mid - 1了，总的来说是[left, mid-1] [mid,right] 
 		}
