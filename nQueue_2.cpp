@@ -30,7 +30,7 @@ void dfs(int x, int y, int s) {
         map[x][y] = '.';
     }
 }
-
+// 时间复杂度是 2 ^ ( n ^ 2)  时间复杂度略差
 
 int main() {
     cin >> n;
